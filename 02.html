@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>총알 피하기</title>
+</head>
+<style>
+    #canvas_container {
+        width: 100%;
+        text-align: center;
+        border: 1px solid black;
+        background-image: url('/0508_game/img/bg2.jpg');
+    }
+
+    canvas {
+        border: 1px solid black;
+        display: inline;
+    }
+</style>
+
+<body>
+    <div id="canvas_container">
+        <h2>총알 피하기</h2>
+        <canvas id="canvas" width="360" height="720"></canvas>
+    </div>
+</body>
+<script src="/0508_game\load.js"></script>
+<script src="/0508_game\game.js"></script>
+<script>
+    const intervalId = setInterval(game, 1000 / FPS);
+</script>
+
+</html>
